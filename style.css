@@ -1,0 +1,10 @@
+body {
+    background-image: url(./Public/Image-Logo/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    font-family: 'Libre-Baskeville';
+    color: white;
+}
