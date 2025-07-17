@@ -4,18 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas Online</title>
-    <link rel="shortcut icon" href="./Public/Image-Logo/coin-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Public/Images/coin-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./Public/Fonts/fonts.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <header>Conversor de Moedas Online</header>
-        <div>
-            <div>
+            <div id="inputs" name="inputs">
+                <select id="input-coin" name="input-coin">
+                    <option value="BRL">BLR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="BRL">BLR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <input type="text" name="value" id="value">
                 
+                <div class="buttons">
+                    <button id="left-arrow">
+                        <img id="img-left-arrow" src="https://img.icons8.com/?size=100&id=98961&format=png&color=000000" alt="left-right">
+                    </button>
+                    <button id="right-arrow">
+                        <img id="img-right-arrow" src="https://img.icons8.com/?size=100&id=98968&format=png&color=000000" alt="arrow-right">
+                    </button>
+                </div>
+
+                <input type="text" name="value" id="value">
+                <select id="output-coin" name="output-coin">
+                    <option value="BRL">BLR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="BRL">BLR</option>
+                    <option value="JPY">JPY</option>
+                </select>
             </div>
-        </div>
+
         <button>Converter</button>
     </main>
     <script src="script.js"></script>
