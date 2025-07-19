@@ -1,16 +1,58 @@
 body {
     background-image: url(./Public/Images/Background.png);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 main {
+    height: 90%;
+    width: 90%;
     font-family: 'Libre-Baskeville';
     color: white;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 61px;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 100%;
+    width: 80%;
+}
+
+.values {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: blue;
+    height: 50%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #left-arrow, #right-arrow {
-    height: 50px;
+    height: 49px;
+    width: 49px;
     font-weight: bold;
     background: none;
     border: none;
