@@ -11,16 +11,17 @@
 <body>
     <main>
         <header>Conversor de Moedas Online</header>
-            <div class="inputs" name="inputs">
-                
-                <select id="input-coin" name="input-coin">
-                    <option value="BRL">BLR</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="BRL">BLR</option>
-                    <option value="JPY">JPY</option>
-                </select>
-                <input type="text" name="value" id="value">
+
+                <div class="left-inputs">
+                    <select id="input-coin" name="input-coin">
+                        <option value="BRL">BLR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                    <p>|</p>
+                    <input type="text" name="left-box-value" id="input-value">
+                </div>
                 
                 <div class="buttons">
                     <button id="left-arrow">
@@ -31,17 +32,18 @@
                     </button>
                 </div>
 
-                <input type="text" name="value" id="value">
-                <select id="output-coin" name="output-coin">
-                    <option value="BRL">BLR</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="BRL">BLR</option>
-                    <option value="JPY">JPY</option>
-                </select>
-            </div>
+                <div class="right-inputs">
+                    <input type="text" name="value" id="output-value">
+                    <p id="p-right">|</p>
+                    <select id="output-coin" name="output-coin">
+                        <option value="USD">USD</option>
+                        <option value="BRL">BLR</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
 
-        <button>Converter</button>
+        <button class="btn-submit">Converter</button>
     </main>
     <script src="script.js"></script>
 </body>

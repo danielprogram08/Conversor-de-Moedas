@@ -7,53 +7,149 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-}
+    overflow-y: hidden;
 
-main {
+    main {
+
     height: 90%;
     width: 90%;
     font-family: 'Libre-Baskeville';
     color: white;
     background-color: rgba(255, 255, 255, 0.26);
     border-radius: 61px;
-    display: grid;
-    place-items: center;
-}
-
-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    flex-direction: row;
+    position: relative;
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            position: absolute;
+            top: 10%;
+        }
+
+        .left-inputs {
+        
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.555);
+        height: 91px;
+        width: 500px;
+        padding: 15px;
+        position: absolute;
+        right: 50%;
+        left: 5%;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 45px;
+                color: black;
+            }
+
+            #input-coin {
+                background-color: rgba(0, 0, 0, 0.582);
+                color: white;
+                border: none;
+                margin: 10px;
+                border-radius: 8px;
+                height: 81px;
+                width: 81px;
+                margin-right: 10px;
+            }
+
+            #input-value {
+                font-size: xx-large;
+                padding-left: 10px;
+                background-color: rgba(0, 0, 0, 0.596);
+                border: none;
+                color: white;
+                margin: 10px;
+                border-radius: 8px;
+                height: 81px;
+                width: 464px;
+            }
+        }
+
+        .buttons {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+
+            #left-arrow, #right-arrow {
+
+                background: none;
+                border: none;
+
+                #img-left-arrow, #img-right-arrow {
+                    height: 49px;
+                    width: 49px;
+                }
+            }
+        }
+
+        .right-inputs {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.555);
+            height: 91px;
+            width: 500px;
+            padding: 15px;
+            position: absolute;
+            right: 5%;
+            border-radius: 10px;
+
+            #p-right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 45px;
+                color: black;
+            }
+
+            #output-coin {
+                margin: 10px;
+                border-radius: 8px;
+                height: 81px;
+                width: 81px;
+                margin-right: 10px;
+                background-color: rgba(0, 0, 0, 0.582);
+                color: white;
+                border: none;
+            }
+
+            #output-value {
+                font-size: xx-large;
+                padding-left: 10px;
+                margin: 10px;
+                border-radius: 8px;
+                height: 81px;
+                width: 464px;
+                background-color: rgba(0, 0, 0, 0.596);
+                border: none;
+                color: white;
+            }
+        }
+
+        .btn-submit {
+            height: 90px;
+            width: 233px;
+            font-size: xx-large;
+            position: absolute;
+            bottom: 10%;
+        }
 }
 
-.inputs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    height: 100%;
-    width: 80%;
-}
-
-.values {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    background-color: blue;
-    height: 50%;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#left-arrow, #right-arrow {
-    height: 49px;
-    width: 49px;
-    font-weight: bold;
-    background: none;
-    border: none;
 }
