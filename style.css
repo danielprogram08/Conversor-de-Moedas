@@ -41,11 +41,10 @@ body {
         background-color: rgba(0, 0, 0, 0.555);
         height: 91px;
         width: 500px;
-        padding: 15px;
-        padding-right: 35px;
+        padding: 10px;
+        padding-right: 30px;
         position: absolute;
-        right: 50%;
-        left: 5%;
+        left: 2%;
 
             p {
                 display: flex;
@@ -59,25 +58,23 @@ body {
                 background-color: rgba(0, 0, 0, 0.582);
                 color: white;
                 border: none;
-                margin: 30px;
+                margin: 10px;
                 border-radius: 8px;
                 height: 81px;
                 width: 81px;
-                margin-right: 10px;
                 font-weight: bold;
             }
 
             #input-value {
                 font-size: xx-large;
                 text-align: center;
-                padding-left: 10px;
+                margin-left: 10px;
                 background-color: rgba(0, 0, 0, 0.596);
                 border: none;
                 color: white;
-                margin: 10px;
                 border-radius: 8px;
                 height: 81px;
-                width: 464px;
+                width: 465px;
             }
         }
 
@@ -109,17 +106,17 @@ body {
 
         .right-inputs {
 
+            border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.555);
             height: 91px;
             width: 500px;
-            padding: 15px;
-            padding-left: 35px;
+            padding: 10px;
+            padding-left: 30px;
             position: absolute;
-            right: 5%;
-            border-radius: 10px;
+            right: 2%;
 
             #p-right {
                 display: flex;
@@ -130,28 +127,26 @@ body {
             }
 
             #output-coin {
+                background-color: rgba(0, 0, 0, 0.582);
+                color: white;
+                border: none;
                 margin: 10px;
                 border-radius: 8px;
                 height: 81px;
                 width: 81px;
-                margin-right: 30px;
-                background-color: rgba(0, 0, 0, 0.582);
-                color: white;
-                border: none;
                 font-weight: bold;
             }
 
             #output-value {
                 font-size: xx-large;
                 text-align: center;
-                padding-left: 10px;
-                margin: 10px;
-                border-radius: 8px;
-                height: 81px;
-                width: 464px;
+                margin-right: 10px;
                 background-color: rgba(0, 0, 0, 0.596);
                 border: none;
                 color: white;
+                border-radius: 8px;
+                height: 81px;
+                width: 465px;
             }
         }
 
@@ -174,6 +169,17 @@ body {
             background-color: aqua;
             transform: scale(1.1);
         }
+    }
 }
 
+@media (max-width: 560px) {
+
+}
+
+@media (min-width: 561px) and (max-width: 1000px) {
+
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    
 }
