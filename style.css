@@ -59,9 +59,11 @@ body {
                 color: white;
                 border: none;
                 margin: 10px;
+                padding-left: 5px;
                 border-radius: 8px;
                 height: 81px;
-                width: 81px;
+                width: 71px;
+                cursor: pointer;
                 font-weight: bold;
             }
 
@@ -104,7 +106,7 @@ body {
             }
         }
 
-        .right-inputs {
+        .right-outputs {
 
             border-radius: 10px;
             display: flex;
@@ -131,10 +133,12 @@ body {
                 color: white;
                 border: none;
                 margin: 10px;
+                padding-left: 5px;
                 border-radius: 8px;
                 height: 81px;
                 width: 81px;
                 font-weight: bold;
+                cursor: pointer;
             }
 
             #output-value {
