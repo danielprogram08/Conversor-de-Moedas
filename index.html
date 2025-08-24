@@ -18,7 +18,7 @@
                         <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
                     </select>
-                    <p>|</p>
+                    <span id="p-left">|</span id="p">
                     <input type="text" name="left-box-value" id="input-value">
                 </div>
                 
@@ -29,7 +29,7 @@
 
                 <div class="right-outputs">
                     <input type="text" name="value" id="output-value">
-                    <p id="p-right">|</p>
+                    <span id="p-right">|</span>
                     <select id="output-coin" name="output-coin">
                         <option value="USD">USD</option>
                         <option value="BRL">BRL</option>
@@ -37,7 +37,10 @@
                     </select>
                 </div>
 
-        <button onclick="ConvertValues()" class="btn-submit">Converter</button>
+        <button onclick="ConvertValues()" class="btn-submit">
+            <span id="title-btn">Converter</span>
+            <span id="loader"></span>
+        </button>
     </main>
     <script src="script.js"></script>
 </body>
