@@ -59,8 +59,8 @@ function Alert() {
     document.body.insertBefore(alert, document.body.firstChild);
 
     setTimeout(() => {
-        alert.style.backgroundColor = 'rgba(0, 0, 0, 0.62)';
-        alert.style.color = 'rgba(255, 255, 255, 0.69)';
+        alert.style.backgroundColor = 'rgb(0, 0, 0)';
+        alert.style.color = 'rgb(255, 255, 255)';
     }, 1000);
 
     setTimeout(() => {

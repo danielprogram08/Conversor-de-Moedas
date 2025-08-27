@@ -8,9 +8,9 @@ body {
     align-items: center;
     position: relative;
     overflow-y: hidden;
+}
 
-    main {
-
+.container {
     height: 90%;
     width: 90%;
     font-family: 'Libre-Baskeville';
@@ -22,155 +22,143 @@ body {
     align-items: center;
     flex-direction: row;
     position: relative;
-
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 60px;
-            position: absolute;
-            top: 10%;
-        }
-
-        .left-inputs {
-        
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.555);
-        height: 91px;
-        width: 500px;
-        padding: 10px;
-        padding-right: 30px;
-        position: absolute;
-        left: 2%;
-
-            #p-left {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 45px;
-                color: black;
-            }
-
-            #input-coin {
-                background-color: rgba(0, 0, 0, 0.582);
-                color: white;
-                border: none;
-                margin: 10px;
-                padding-left: 5px;
-                border-radius: 8px;
-                height: 81px;
-                width: 71px;
-                cursor: pointer;
-                font-weight: bold;
-            }
-
-            #input-value {
-                font-size: xx-large;
-                text-align: center;
-                margin-left: 10px;
-                background-color: rgba(0, 0, 0, 0.596);
-                border: none;
-                color: white;
-                border-radius: 8px;
-                height: 81px;
-                width: 465px;
-            }
-        }
-
-        .btn-invertValue {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: absolute;
-            background: none;
-            border: none;
-            cursor: pointer;
-            transition: all linear 0.1s;
-
-            #img-left-arrow, #img-right-arrow {
-                height: 50px;
-            }
-        }
-
-        .btn-invertValue:hover {
-            transform: scale(1.1);
-        }
-
-        .right-outputs {
-
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.555);
-            height: 91px;
-            width: 500px;
-            padding: 10px;
-            padding-left: 30px;
-            position: absolute;
-            right: 2%;
-
-            #p-right {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 45px;
-                color: black;
-            }
-
-            #output-coin {
-                background-color: rgba(0, 0, 0, 0.582);
-                color: white;
-                border: none;
-                margin: 10px;
-                padding-left: 5px;
-                border-radius: 8px;
-                height: 81px;
-                width: 81px;
-                font-weight: bold;
-                cursor: pointer;
-            }
-
-            #output-value {
-                font-size: xx-large;
-                text-align: center;
-                margin-right: 10px;
-                background-color: rgba(0, 0, 0, 0.596);
-                border: none;
-                color: white;
-                border-radius: 8px;
-                height: 81px;
-                width: 465px;
-            }
-        }
-
-        .btn-submit {
-            height: 90px;
-            width: 233px;
-            border-radius: 10px;
-            border: none;
-            color: white;
-            cursor: pointer;
-            background-color: #008291;
-            font-weight: bold;
-            font-size: xx-large;
-            position: absolute;
-            bottom: 10%;
-            transition: all linear 0.2s;
-        }
-
-        .btn-submit:hover {
-            background-color: aqua;
-            transform: scale(1.1);
-        }
-    }
 }
 
-/*Alerta*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    position: absolute;
+    top: 5%;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Estilos comuns para os painéis de entrada e saída */
+.left-inputs,
+.right-outputs {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 91px;
+    width: 500px;
+    padding: 10px;
+    position: absolute;
+}
+
+/* Ajustes específicos para o painel esquerdo e direito */
+.left-inputs {
+    padding-right: 30px;
+    left: 2%;
+}
+
+.right-outputs {
+    padding-left: 30px;
+    right: 3%;
+}
+
+/* Estilos comuns para os parágrafos dentro dos painéis */
+#p-left,
+#p-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    color: black;
+}
+
+/* Estilos comuns para os campos de input */
+#input-coin,
+#input-value,
+#output-coin,
+#output-value {
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 81px;
+}
+
+#input-coin,
+#output-coin {
+    cursor: pointer;
+    font-weight: bold;
+    width: 71px;
+    padding-left: 5px;
+    margin: 10px;
+}
+
+#input-coin {
+    margin-left: 20px;
+}
+
+#output-coin {
+    width: 81px;
+    margin-right: 20px;
+}
+
+#input-value,
+#output-value {
+    font-size: xx-large;
+    text-align: center;
+    width: 465px;
+    margin-right: 10px;
+}
+
+#input-value {
+    margin-left: 10px;
+}
+
+.btn-invertValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all linear 0.1s;   
+}
+
+#img-left-arrow,
+#img-right-arrow {   
+    height: 50px;
+}
+
+.btn-invertValue:hover {
+    transform: scale(1.1);
+}
+
+.btn-submit {
+    height: 90px;
+    width: 233px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #008291;
+    font-weight: bold;
+    font-size: xx-large;
+    position: absolute;
+    bottom: 10%;
+    transition: all linear 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: aqua;
+    transform: scale(1.1);
+}
+
+/* Alerta */
 .alert {
     position: absolute;
     top: 0;
@@ -185,7 +173,7 @@ body {
     transition: all ease-in-out 3.0s;
 }
 
-/*Spinner de Carregamento*/
+/* Spinner de Carregamento */
 #loader {
     width: 48px;
     height: 48px;
@@ -195,25 +183,114 @@ body {
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    }
+}
 
-    @keyframes rotation {
+@keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
-    } 
+}
 
+/* Media Queries */
 @media (max-width: 560px) {
+    .container {
+        flex-direction: column;
+    }
 
+    header {
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
+        position: static;
+        margin-bottom: 30%;
+    }
+
+    .panel {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    #img-left-arrow,
+    #img-right-arrow {   
+        height: 30px;
+    }
+
+    .left-inputs,
+    .right-outputs {
+        height: 91px;
+        width: 70%;
+        left: 3%;
+        position: static;
+        margin: 5%;
+    }
+
+    .left-inputs {
+        margin-bottom: 20%;
+    }
+
+    #input-coin,
+    #output-coin {
+        padding: 0;
+        height: 81px;
+        width: 40px;
+        font-size: 16px;
+    }
+
+    #input-coin {
+        margin-left: 30px;
+    }
+
+    #output-coin {
+        margin-right: 0;
+    }
+
+    #input-value,
+    #output-value {
+        font-size: 25px;
+        height: 81px;
+        width: 150px;
+    }
+
+    #input-value {
+        margin-right: 20px;
+    }
+
+    .btn-submit {
+        position: static;
+        height: 60px;
+        width: 200px;
+        font-size: 25px;
+        margin-top: 10%;
+        align-items: center;
+    }
+
+    .alert {
+        padding: 5px;
+        height: 80px;
+        width: 200px;
+        font-size: 13px;
+    }
+
+    #loader {
+        margin-top: 5px;
+        height: 35px;
+        width: 35px;
+    }
 }
 
-@media (min-width: 561px) and (max-width: 1000px) {
+@media (max-width: 380px) {
+    header {
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
+        position: static;
+        margin-bottom: 5%;
+    }
 
-}
-
-@media (min-width: 1000px) and (max-width: 1300px) {
-    
+    .panel {
+        margin-bottom: 0;
+    }
 }

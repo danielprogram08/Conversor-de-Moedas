@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <main class="container">
         <header>Conversor de Moedas Online</header>
-
+            <div class="panel">
                 <div class="left-inputs">
                     <select id="input-coin" name="input-coin">
                         <option value="BRL">🇧🇷BRL</option>
@@ -36,7 +36,8 @@
                         <option value="EUR">🇪🇺EUR</option>
                     </select>
                 </div>
-
+            </div>
+                
         <button onclick="ConvertValues()" class="btn-submit">
             <span id="title-btn">Converter</span>
             <span id="loader"></span>
