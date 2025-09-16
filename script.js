@@ -36,6 +36,7 @@ async function ConvertValues() {
 
     if (!response.ok) {
         console.log('Erro ao converter valor! ' + response.status);
+        alert('Erro ao converter valor! Tente novamente mais tarde!');
     }
 
     const data = await response.json();
